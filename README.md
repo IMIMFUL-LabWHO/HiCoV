@@ -104,3 +104,70 @@ hcov_229e
 
 The second positional argument is the directory containing the paired-end FASTQ files.
 
+## Main script overview
+
+The main `hicov.sh` script automates the complete processing of paired-end Illumina sequencing data from raw FASTQ files to consensus sequences, variant calls, and sequencing statistics.
+
+For each sample, the pipeline performs the following main steps:
+
+1. **Sample detection**
+   Identifies samples from paired-end FASTQ filenames.
+
+2. **Read trimming and QC**
+   Uses `fastp` to remove low-quality bases, adapters, poly-G/poly-X sequences, and short reads. HTML and JSON QC reports are generated for each sample.
+
+3. **Reference preparation**
+   Indexes the selected reference genome using `bwa` and `samtools`.
+
+4. **Read mapping**
+   Aligns trimmed reads to the reference genome using `bwa mem`.
+
+5. **Primer trimming and BAM processing**
+   Removes primer-derived sequence using `ivar trim`, fixes mate information, sorts alignments, removes duplicates, and produces the final indexed BAM files.
+
+6. **Mapping and coverage statistics**
+   Calculates alignment statistics, genome coverage, and per-position sequencing depth using `samtools`.
+
+7. **Consensus generation**
+   Generates a consensus sequence for each sample using `samtools mpileup` and `ivar consensus`. Low-confidence and ambiguous positions are represented as `N`.
+
+8. **Variant calling and annotation**
+   Calls variants using `ivar variants` and annotates them using the supplied reference FASTA and GFF3 files.
+
+9. **Result consolidation**
+   Combines individual sample outputs into summary files containing mapping statistics, consensus sequences, variants, and coverage data.
+
+The main output files are written to the `results/` directory:
+
+```text
+results/
+├── mapstats.tsv
+├── consensus_sequences.fasta
+├── sleek_variants.tsv
+└── coverage.csv
+```
+
+In short, the pipeline converts:
+
+```text
+Paired-end FASTQ
+      │
+      ▼
+Read trimming + QC
+      │
+      ▼
+Reference mapping
+      │
+      ▼
+Primer trimming + BAM processing
+      │
+      ├──────────────► Mapping / coverage statistics
+      │
+      ├──────────────► Consensus sequences
+      │
+      └──────────────► Variant calling
+                              │
+                              ▼
+                       Consolidated results
+```
+
