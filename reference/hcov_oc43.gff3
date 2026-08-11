@@ -1,0 +1,55 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region NC_006213.1 1 30741
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=31631
+NC_006213.1	RefSeq	region	1	30741	.	+	.	ID=NC_006213.1:1..30741;Dbxref=ATCC:VR-759,taxon:31631;country=USA;gb-acronym=HCoV-OC43;gbkey=Src;mol_type=genomic RNA;serotype=OC43;strain=ATCC VR-759
+NC_006213.1	RefSeq	five_prime_UTR	1	209	.	+	.	ID=id-NC_006213.1:1..209;gbkey=5'UTR
+NC_006213.1	RefSeq	gene	210	21496	.	+	.	ID=gene-EYW02_gp1;Dbxref=GeneID:39105222;Name=ORF1ab;gbkey=Gene;gene=ORF1ab;gene_biotype=protein_coding;locus_tag=EYW02_gp1
+NC_006213.1	RefSeq	CDS	210	13340	.	+	0	ID=cds-YP_009555238.1;Parent=gene-EYW02_gp1;Dbxref=GenBank:YP_009555238.1,GeneID:39105222;Name=YP_009555238.1;Note=translated via a -1 ribosomal frameshift%3B ORF 1a/1b%3B ORF1ab polyprotein is cleaved to yield the RNA-dependent RNA polymerase and other nonstructural proteins;exception=ribosomal slippage;gbkey=CDS;gene=ORF1ab;locus_tag=EYW02_gp1;product=ORF1ab polyprotein;protein_id=YP_009555238.1
+NC_006213.1	RefSeq	CDS	13340	21496	.	+	0	ID=cds-YP_009555238.1;Parent=gene-EYW02_gp1;Dbxref=GenBank:YP_009555238.1,GeneID:39105222;Name=YP_009555238.1;Note=translated via a -1 ribosomal frameshift%3B ORF 1a/1b%3B ORF1ab polyprotein is cleaved to yield the RNA-dependent RNA polymerase and other nonstructural proteins;exception=ribosomal slippage;gbkey=CDS;gene=ORF1ab;locus_tag=EYW02_gp1;product=ORF1ab polyprotein;protein_id=YP_009555238.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	210	947	.	+	.	ID=id-YP_009555238.1:1..246;Note=PL1-PRO cleavage product;Parent=cds-YP_009555238.1;gbkey=Prot;product=leader protein;protein_id=YP_009555246.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	948	2762	.	+	.	ID=id-YP_009555238.1:247..851;Note=PL1-PRO cleavage product;Parent=cds-YP_009555238.1;gbkey=Prot;product=MHV p65-like protein;protein_id=YP_009555247.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	2763	8459	.	+	.	ID=id-YP_009555238.1:852..2750;Note=PL1-PRO%3B PL2-PRO%3B HD%3B contains papain-like proteinase 1 domain (PL1-PRO)%2C X-domain%2C papain-like proteinase 2 domain (PL2-PRO) and hydrophobic domain (HD);Parent=cds-YP_009555238.1;gbkey=Prot;product=PLpro;protein_id=YP_009555248.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	8460	9947	.	+	.	ID=id-YP_009555238.1:2751..3246;Parent=cds-YP_009555238.1;gbkey=Prot;product=nsp4;protein_id=YP_009555249.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	9948	10856	.	+	.	ID=id-YP_009555238.1:3247..3549;Note=3CL-PRO cleavage product;Parent=cds-YP_009555238.1;gbkey=Prot;product=3C-like proteinase;protein_id=YP_009555250.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	10857	11717	.	+	.	ID=id-YP_009555238.1:3550..3836;Note=HD2%3B hydrophobic domain;Parent=cds-YP_009555238.1;gbkey=Prot;product=nsp6;protein_id=YP_009555258.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	11718	11984	.	+	.	ID=id-YP_009555238.1:3837..3925;Parent=cds-YP_009555238.1;gbkey=Prot;product=nsp7;protein_id=YP_009555259.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	11985	12575	.	+	.	ID=id-YP_009555238.1:3926..4122;Parent=cds-YP_009555238.1;gbkey=Prot;product=nsp8;protein_id=YP_009555251.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	12576	12905	.	+	.	ID=id-YP_009555238.1:4123..4232;Parent=cds-YP_009555238.1;gbkey=Prot;product=nsp9;protein_id=YP_009555252.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	12906	13316	.	+	.	ID=id-YP_009555238.1:4233..4369;Note=GFL%3B growth-factor-like protein;Parent=cds-YP_009555238.1;gbkey=Prot;product=nsp10;protein_id=YP_009555253.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	13317	13340	.	+	.	ID=id-YP_009555238.1:4370..5297;Parent=cds-YP_009555238.1;gbkey=Prot;product=RNA-dependent RNA polymerase;protein_id=YP_009555260.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	13340	16099	.	+	.	ID=id-YP_009555238.1:4370..5297;Parent=cds-YP_009555238.1;gbkey=Prot;product=RNA-dependent RNA polymerase;protein_id=YP_009555260.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	16100	17908	.	+	.	ID=id-YP_009555238.1:5298..5900;Note=MB%3B NTPase/HEL%3B metal-binding domain%3B NTPase/helicase domain;Parent=cds-YP_009555238.1;gbkey=Prot;product=Hel;protein_id=YP_009555254.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	17909	19471	.	+	.	ID=id-YP_009555238.1:5901..6421;Parent=cds-YP_009555238.1;gbkey=Prot;product=3' to 5' exonuclease;protein_id=YP_009555255.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	19472	20596	.	+	.	ID=id-YP_009555238.1:6422..6796;Parent=cds-YP_009555238.1;gbkey=Prot;product=nsp15;protein_id=YP_009555256.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	20597	21493	.	+	.	ID=id-YP_009555238.1:6797..7095;Parent=cds-YP_009555238.1;gbkey=Prot;product=2'-O-MTase;protein_id=YP_009555257.1
+NC_006213.1	RefSeq	CDS	210	13361	.	+	0	ID=cds-YP_009924317.1;Parent=gene-EYW02_gp1;Dbxref=GenBank:YP_009924317.1,GeneID:39105222;Name=YP_009924317.1;Note=ORF1a polyprotein is cleaved to yield the nonstructural proteins;gbkey=CDS;gene=ORF1ab;locus_tag=EYW02_gp1;product=ORF1a polyprotein;protein_id=YP_009924317.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	210	947	.	+	.	ID=id-YP_009924317.1:1..246;Parent=cds-YP_009924317.1;gbkey=Prot;product=leader protein;protein_id=YP_009924319.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	948	2762	.	+	.	ID=id-YP_009924317.1:247..851;Parent=cds-YP_009924317.1;gbkey=Prot;product=MHV p65-like protein;protein_id=YP_009924320.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	2763	8459	.	+	.	ID=id-YP_009924317.1:852..2750;Note=PL1-PRO%3B PL2-PRO%3B HD%3B contains papain-like proteinase 1 domain (PL1-PRO)%2C X-domain%2C papain-like proteinase 2 domain (PL2-PRO) and hydrophobic domain (HD);Parent=cds-YP_009924317.1;gbkey=Prot;product=PLpro;protein_id=YP_009924321.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	8460	9947	.	+	.	ID=id-YP_009924317.1:2751..3246;Parent=cds-YP_009924317.1;gbkey=Prot;product=nsp4;protein_id=YP_009924322.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	9948	10856	.	+	.	ID=id-YP_009924317.1:3247..3549;Parent=cds-YP_009924317.1;gbkey=Prot;product=3C-like proteinase;protein_id=YP_009924323.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	10857	11717	.	+	.	ID=id-YP_009924317.1:3550..3836;Note=HD2%3B hydrophobic domain;Parent=cds-YP_009924317.1;gbkey=Prot;product=nsp6;protein_id=YP_009924324.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	11718	11984	.	+	.	ID=id-YP_009924317.1:3837..3925;Parent=cds-YP_009924317.1;gbkey=Prot;product=nsp7;protein_id=YP_009924325.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	11985	12575	.	+	.	ID=id-YP_009924317.1:3926..4122;Parent=cds-YP_009924317.1;gbkey=Prot;product=nsp8;protein_id=YP_009924326.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	12576	12905	.	+	.	ID=id-YP_009924317.1:4123..4232;Parent=cds-YP_009924317.1;gbkey=Prot;product=nsp9;protein_id=YP_009924327.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	12906	13316	.	+	.	ID=id-YP_009924317.1:4233..4369;Note=GFL%3B growth-factor-like protein;Parent=cds-YP_009924317.1;gbkey=Prot;product=nsp10;protein_id=YP_009924328.1
+NC_006213.1	RefSeq	mature_protein_region_of_CDS	13317	13358	.	+	.	ID=id-YP_009924317.1:4370..4383;Parent=cds-YP_009924317.1;gbkey=Prot;product=nsp11;protein_id=YP_009924329.1
+NC_006213.1	RefSeq	gene	21506	22342	.	+	.	ID=gene-EYW02_gp2;Dbxref=GeneID:39105215;Name=ns2;gbkey=Gene;gene=ns2;gene_biotype=protein_coding;locus_tag=EYW02_gp2
+NC_006213.1	RefSeq	CDS	21506	22342	.	+	0	ID=cds-YP_009555239.1;Parent=gene-EYW02_gp2;Dbxref=GenBank:YP_009555239.1,GeneID:39105215;Name=YP_009555239.1;Note=non-structural protein 2;gbkey=CDS;gene=ns2;locus_tag=EYW02_gp2;product=ns2;protein_id=YP_009555239.1
+NC_006213.1	RefSeq	gene	22354	23628	.	+	.	ID=gene-EYW02_gp3;Dbxref=GeneID:39105216;Name=HE;gbkey=Gene;gene=HE;gene_biotype=protein_coding;locus_tag=EYW02_gp3
+NC_006213.1	RefSeq	CDS	22354	23628	.	+	0	ID=cds-YP_009555240.1;Parent=gene-EYW02_gp3;Dbxref=GenBank:YP_009555240.1,GeneID:39105216;Name=YP_009555240.1;gbkey=CDS;gene=HE;locus_tag=EYW02_gp3;product=hemagglutinin-esterase;protein_id=YP_009555240.1
+NC_006213.1	RefSeq	gene	23643	27704	.	+	.	ID=gene-EYW02_gp4;Dbxref=GeneID:39105218;Name=S;gbkey=Gene;gene=S;gene_biotype=protein_coding;locus_tag=EYW02_gp4
+NC_006213.1	RefSeq	CDS	23643	27704	.	+	0	ID=cds-YP_009555241.1;Parent=gene-EYW02_gp4;Dbxref=GenBank:YP_009555241.1,GeneID:39105218;Name=YP_009555241.1;gbkey=CDS;gene=S;locus_tag=EYW02_gp4;product=spike surface glycoprotein;protein_id=YP_009555241.1
+NC_006213.1	RefSeq	gene	27792	28121	.	+	.	ID=gene-EYW02_gp5;Dbxref=GeneID:39105219;Name=ns12.9;gbkey=Gene;gene=ns12.9;gene_biotype=protein_coding;locus_tag=EYW02_gp5
+NC_006213.1	RefSeq	CDS	27792	28121	.	+	0	ID=cds-YP_009555242.1;Parent=gene-EYW02_gp5;Dbxref=GenBank:YP_009555242.1,GeneID:39105219;Name=YP_009555242.1;Note=non-structural protein%3B ORF5;gbkey=CDS;gene=ns12.9;locus_tag=EYW02_gp5;product=ns12.9;protein_id=YP_009555242.1
+NC_006213.1	RefSeq	CDS	28108	28362	.	+	0	ID=cds-YP_009555243.1;Dbxref=GenBank:YP_009555243.1;Name=YP_009555243.1;gbkey=CDS;product=envelope protein;protein_id=YP_009555243.1
+NC_006213.1	RefSeq	gene	28108	28362	.	+	.	ID=gene-EYW02_gp6;Dbxref=GeneID:39105217;Name=E;gbkey=Gene;gene=E;gene_biotype=other;locus_tag=EYW02_gp6
+NC_006213.1	RefSeq	gene	28377	29069	.	+	.	ID=gene-EYW02_gp7;Dbxref=GeneID:39105220;Name=M;gbkey=Gene;gene=M;gene_biotype=protein_coding;locus_tag=EYW02_gp7
+NC_006213.1	RefSeq	CDS	28377	29069	.	+	0	ID=cds-YP_009555244.1;Parent=gene-EYW02_gp7;Dbxref=GenBank:YP_009555244.1,GeneID:39105220;Name=YP_009555244.1;gbkey=CDS;gene=M;locus_tag=EYW02_gp7;product=membrane protein;protein_id=YP_009555244.1
+NC_006213.1	RefSeq	gene	29079	30425	.	+	.	ID=gene-EYW02_gp8;Dbxref=GeneID:39105221;Name=N;gbkey=Gene;gene=N;gene_biotype=protein_coding;locus_tag=EYW02_gp8
+NC_006213.1	RefSeq	CDS	29079	30425	.	+	0	ID=cds-YP_009555245.1;Parent=gene-EYW02_gp8;Dbxref=GenBank:YP_009555245.1,GeneID:39105221;Name=YP_009555245.1;gbkey=CDS;gene=N;locus_tag=EYW02_gp8;product=nucleocapsid protein;protein_id=YP_009555245.1
+NC_006213.1	RefSeq	CDS	29140	29322	.	+	0	ID=cds-YP_009924318.1;Parent=gene-EYW02_gp8;Dbxref=GenBank:YP_009924318.1,GeneID:39105221;Name=YP_009924318.1;gbkey=CDS;gene=N;locus_tag=EYW02_gp8;product=I protein;protein_id=YP_009924318.1
+NC_006213.1	RefSeq	three_prime_UTR	30424	30741	.	+	.	ID=id-NC_006213.1:30424..30741;gbkey=3'UTR
+
