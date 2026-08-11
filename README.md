@@ -17,6 +17,50 @@ The following files are also required:
 
 ---
 
+## Repository overview
+
+HiCov consists of a primary Bash pipeline for sequencing-data processing and two R scripts for downstream analysis and visualization.
+
+```text
+Raw paired-end FASTQ files
+          │
+          ▼
+       hicov.sh
+          │
+          ├────────► QC reports
+          │
+          ├────────► Final BAM files
+          │
+          ├────────► Consensus sequences
+          │
+          ├────────► Mapping statistics
+          │
+          ├────────► coverage.csv
+          │                │
+          │                ▼
+          │        Coverage analysis R script
+          │                │
+          │                ▼
+          │        Genome coverage figures
+          │
+          └────────► sleek_variants.tsv
+                           │
+                           ▼
+                 variants_data_prep.R
+                           │
+                           ▼
+                 variants_enhanced.csv
+```
+
+### Scripts
+
+| Script                     | Purpose                                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `hicov.sh`                 | Main sequencing pipeline: trimming, mapping, primer trimming, mapping statistics, consensus generation, and variant calling |
+| Coverage analysis R script | Calculates coverage metrics and generates genome-wide coverage visualizations for hCoV-229E, NL63, OC43, and HKU1           |
+| `variants_data_prep.R`     | Cleans, classifies, and enriches the consolidated iVar variant table for downstream analysis                                |
+
+
 ## Usage
 
 ### 1. Build the Singularity container
