@@ -6,7 +6,7 @@ The pipeline performs read trimming and quality control, reference mapping, prim
 
 HiCov was developed through collaboration between **IMI MF, University of Ljubljana** and the **Hiscox Lab, University of Liverpool**.
 
-**Author:** Alen Suljič
+**Author:** Alen Suljič (alen.suljic@mf.uni-lj.si)
 
 ---
 
