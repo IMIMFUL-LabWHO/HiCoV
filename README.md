@@ -7,8 +7,6 @@ The pipeline performs read trimming and quality control, reference mapping, prim
 HiCov was developed through collaboration between **IMI MF, University of Ljubljana** and the **Hiscox Lab, University of Liverpool**.
 
 **Author:** Alen Suljič
-**Inspiration:** Martin Bosilj, Hannah Goldswain
-**Initial version:** 10 July 2024
 
 ---
 
@@ -93,7 +91,7 @@ Raw paired-end FASTQ files
 | Script                     | Purpose                                                                                                                          |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `hicov.sh`                 | Main sequencing pipeline: read trimming, mapping, primer trimming, mapping statistics, consensus generation, and variant calling |
-| Coverage analysis R script | Calculates coverage metrics and generates genome-wide coverage visualizations for hCoV-229E, NL63, OC43, and HKU1                |
+| `coverage_visualisation.R`   | Calculates coverage metrics and generates genome-wide coverage visualizations for hCoV-229E, NL63, OC43, and HKU1                |
 | `variants_data_prep.R`     | Cleans, classifies, and enriches the consolidated iVar variant table for downstream analysis                                     |
 
 ---
@@ -708,20 +706,6 @@ When repeating an analysis, using a new working directory is recommended to avoi
 
 # Citation
 
-If HiCov is used in published work, please cite this repository together with relevant publications describing the sequencing protocol and analysis workflow.
-
-A formal citation can be added here when available.
+Ošep, A., Goldswain, H., Suljič, A. et al. Development of type-specific amplicon schemes for whole-genome sequencing of seasonal human coronaviruses from clinical samples. Sci Rep (2026). https://doi.org/10.1038/s41598-026-63549-1
 
 ---
-
-# License
-
-No license has currently been specified.
-
-An appropriate `LICENSE` file should be added before public distribution or reuse.
-
----
-
-# Contact
-
-For questions regarding the pipeline, reference files, or downstream analysis workflow, please contact the repository maintainers.
